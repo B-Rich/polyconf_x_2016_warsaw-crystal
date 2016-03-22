@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Small talk about languages and why I like Crystal</title>
+
+		<meta name="description" content="Small talk about languages and why I like Crystal">
+		<meta name="author" content="Aleksander Kwiatkowski">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Small talk about languages </h1>
+					<h2>and why I like Crystal</h2>
+					<p>
+						<small>Created by:</small><br/>
+            <small> <a href="http://github.com/akwiatkowski">Aleksander Kwiatkowski</a> / <a href="http://twitter.com/bobik314">@bobik314</a></small><br/>
+					</p>
+				</section>
+
+				<section>
+					<h2>Ruby</h2>
+          <h3>work</h3>
+				</section>
+
+        <section>
+					<h2>Crystal</h2>
+          <ul>
+            <li>Polyconf 2015 - v0.7</li>
+						<li>Now - v0.14</li>
+          </ul>
+				</section>
+
+        <section>
+					<h2>Why I like Crystal</h2>
+					<ul>
+						<li>big experience in Ruby</li>
+						<li>love syntax</li>
+						<li>performance</li>
+						<li>my scripts and apps</li>
+						<li>Crystal vs Ruby</li>
+					</ul>
+				</section>
+
+        <section>
+					<h2>Alternatives</h2>
+          <ul>
+            <li>Go</li>
+            <li>Rust</li>
+            <li>Nim</li>
+          </ul>
+				</section>
+
+        <section>
+					<h2>Rust</h2>
+					<p>"Rust competes for mindshare with C++ and D for programmers who are prepared to accept more complex syntax and semantics (and presumably higher readability costs) in return for the maximum possible performance. For example, micro controllers, AAA game engines, and web rendering engines."</p>
+          <p><a href="http://dave.cheney.net/2015/07/02/why-go-and-rust-are-not-competitors">http://dave.cheney.net/2015/07/02/why-go-and-rust-are-not-competitors</a></p>
+				</section>
+
+				<section>
+					<h2>Go</h2>
+					<p>"Go competes for mindshare in the post 2006 Internet 2.0 generation of companies who have outgrown languages like Ruby, Python, and Node.js (v8) and have lost patience with the high deployment costs of JVM based languages."</p>
+          <p><a href="http://dave.cheney.net/2015/07/02/why-go-and-rust-are-not-competitors">http://dave.cheney.net/2015/07/02/why-go-and-rust-are-not-competitors</a></p>
+				</section>
+
+				<section>
+					<h2>Nim</h2>
+					<p>Mix of Python and Go?</p>
+				</section>
+
+				<section>
+					<h2>Links</h2>
+          <p><a href="https://news.ycombinator.com/item?id=8575054">Hacker news: who is still using C/C++ in 2014, and why?</a></p>
+					<p><a href="http://arthurtw.github.io/2015/01/12/quick-comparison-nim-vs-rust.html">A Quick Comparison of Nim vs. Rust</a></p>
+					<p><a href="https://news.ycombinator.com/item?id=9050114">Hacker news: We just switched from Rust to Nim...</a></p>
+					<p><a href="https://andreaferretti.github.io/on-rust-and-nim/">On Rust and Nim</a></p>
+					<p><a href="https://www.quora.com/Which-of-the-emerging-system-languages-is-the-strongest-language-Rust-D-Go-Nim-or-Crystal-Why-is-it-the-best">Quora: Which of the emerging system languages</a></p>
+					<p><a href="http://joshitech.blogspot.com/2014/11/go-vs-rust-productivity-vs-performance.html">Go vs Rust : Productivity vs Performance</a></p>
+
+				</section>
+
+        <section>
+					<h2>crystal_api</h2>
+          <p>Let's build a REST api! Using <a href="https://github.com/akwiatkowski/crystal_api">crystal_api</a></p>
+          <ul>
+            <li>install crystal</li>
+            <li>add crystal_api shard</li>
+            <li>prepare DB configuration (database.yml)</li>
+            <li>create model class</li>
+            <li>create service class</li>
+            <li>create controller class</li>
+            <li>create app class</li>
+            <li>run it</li>
+          </ul>
+					<p><a href="https://github.com/akwiatkowski/crystal_api/blob/master/bin/api.cr">Sample API</a></p>
+				</section>
+
+
+        <section>
+					<h2>Performance!</h2>
+          <p>10 object in seeds, 5s</p>
+          <table>
+            <tbody>
+              <tr>
+                <th>technology</th>
+                <th>GET requests (20)</th>
+                <th>GET requests (100)</th>
+                <th>POST requests (20)</th>
+                <th>POST requests (100)</th>
+              </tr>
+              <tr>
+                <td>crystal_api</td>
+                <td>24829</td>
+                <td>25712</td>
+                <td>1137</td>
+                <td>1129</td>
+              </tr>
+              <tr>
+                <td>postgrest</td>
+                <td>7865</td>
+                <td>9297</td>
+                <td>998</td>
+                <td>1014</td>
+              </tr>
+              <tr>
+                <td>rails</td>
+                <td>1055</td>
+                <td>1168</td>
+                <td>535</td>
+                <td>538</td>
+              </tr>
+            </tbody>
+          </table>
+
+				</section>
+
+        <section>
+					<h2>Thanks!</h2>
+          <p><a href="http://crystal-lang.org/">Crystal language</a></p>
+					<p><a href="https://github.com/akwiatkowski/crystal_api">crystal_api</a></p>
+          <p>Other stuff</p>
+          <p><a href="http://homeio.org/">HomeIO</a></p>
+          <p><a href="http://akwiatkowski.homeio.org.pl/">Private blog</a></p>
+				</section>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
